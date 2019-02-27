@@ -1,6 +1,8 @@
 // Spectrum Colorpicker v1.8.0-ah.1
-// https://github.com/bgrins/spectrum
-// Author: Brian Grinstead
+// Forked Repo: https://github.com/ahape/spectrum
+// Forked Author(s): Alan Hape
+// Original Repo: https://github.com/bgrins/spectrum
+// Original Author: Brian Grinstead
 // License: MIT
 
 (function (factory) {
