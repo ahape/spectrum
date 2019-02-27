@@ -26,6 +26,7 @@
         change: noop,
         show: noop,
         hide: noop,
+        select: noop,
 
         // Options
         color: false,
@@ -167,6 +168,7 @@
         opts.callbacks = {
             'move': bind(opts.move, callbackContext),
             'change': bind(opts.change, callbackContext),
+            'select': bind(opts.select, callbackContext),
             'show': bind(opts.show, callbackContext),
             'hide': bind(opts.hide, callbackContext),
             'beforeShow': bind(opts.beforeShow, callbackContext)
@@ -872,6 +874,7 @@
                 displayColor = color.toString(currentPreferredFormat);
                 // Update the selection palette with the current color
                 addColorToSelectionPalette(color);
+                callbacks.select(color);
             }
 
             if (isInput) {
